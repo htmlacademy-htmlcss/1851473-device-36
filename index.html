@@ -1,12 +1,152 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Device</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+    <header class="header">
+      <div class="container">
+        <nav class="navigation">
+          <a href="device-index.html" class="logo navigation__logo">
+            <img src="images/logo.svg" alt="Логотип" />
+          </a>
+          <div class="navigation__container">
+            <form
+              action="https://echo.htmlacademy.ru"
+              method="GET"
+              class="form"
+            >
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Поиск по сайту"
+                class="form__search"
+              />
+              <label for="search" class="visually-hidden">
+                Поиск по сайту.</label
+              >
+              <button class="form__btn-search" type="submit">Найти</button>
+            </form>
+            <ul class="navigation__user-list navigation__user-list--log-in">
+              <li class="navigation__user-item">
+                <a href="#"> Войти </a>
+              </li>
+            </ul>
+            <ul class="navigation__user-list">
+              <li class="navigation__user-item">
+                <a href="#">Сравнить </a>
+              </li>
+              <li class="navigation__user-item">
+                <a href="#">
+                  Корзина
+                  <span class="navigation__number"> 2 </span>
+                </a>
+                <div class="popover popover-cart">
+                  <ul class="popover-cart__list">
+                    <li class="popover-cart__item">
+                      <a href="#">
+                        <img
+                          src="images/product-2.jpg"
+                          alt="Продукт."
+                          width="39"
+                          height="43"
+                        />
+                        <h2 class="popover-cart__title">
+                          Любительская селфи-палка
+                        </h2>
+                      </a>
+                      <button class="popover-cart__item-delete" type="button">
+                        <span class="visually-hidden"> Удалить.</span>
+                      </button>
+                    </li>
+                    <li class="popover-cart__item">
+                      <a href="#">
+                        <img
+                          src="images/product-1.jpg"
+                          alt="Продукт."
+                          width="39"
+                          height="43"
+                        />
+                        <h2 class="popover-cart__title">
+                          Профессиональная селфи-палка
+                        </h2>
+                      </a>
+                      <button class="popover-cart__item-delete" type="button">
+                        <span class="visually-hidden"> Удалить.</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="popover-cart__shop-container">
+                    <div class="popover-cart__number-shop">
+                      <span> Товаров: </span>
+                      <span> 2 </span>
+                    </div>
+                    <div class="popover-cart__total-price">
+                      <span> Сумма: </span>
+                      <span> 2000 ₽ </span>
+                    </div>
+                  </div>
+                  <a href="#" class="popover-cart__btn"> Открыть корзину </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <ul class="navigation__list">
+            <li class="navigation__item navigation-item--popover">
+              <a href="#"> Каталог товаров </a>
+              <div class="navigation__popover-container">
+                <ul class="navigation__popover-list">
+                  <li class="navigation__popover-item">
+                    <a href="#"> Виртуальная реальность </a>
+                  </li>
+                  <li class="navigation__popover-item">
+                    <a href="#"> Моноподы для cелфи </a>
+                  </li>
+                  <li class="navigation__popover-item">
+                    <a href="#"> Экшн-камеры </a>
+                  </li>
+                </ul>
+                <ul class="navigation__popover-list">
+                  <li class="navigation__popover-item">
+                    <a href="#"> Фитнес-браслеты </a>
+                  </li>
+                  <li class="navigation__popover-item">
+                    <a href="#"> Умные часы </a>
+                  </li>
+                </ul>
+                <ul class="navigation__popover-list">
+                  <li class="navigation__popover-item">
+                    <a href="#"> Квадрокоптеры </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="navigation__item">
+              <a href="#"> Доставка </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#"> Гарантия </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#"> Контакты </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main"></main>
+    <footer class="footer"></footer>
   </body>
 </html>
+
