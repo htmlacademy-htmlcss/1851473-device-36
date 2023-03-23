@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.css" />
     <title>Device</title>
   </head>
   <body>
@@ -26,6 +26,7 @@
                 id="search"
                 placeholder="Поиск по сайту"
                 class="form__search"
+                required
               />
               <label for="search" class="visually-hidden">
                 Поиск по сайту.</label
@@ -97,7 +98,7 @@
             </ul>
           </div>
           <ul class="navigation__list">
-            <li class="navigation__item navigation-item--popover">
+            <li class="navigation__item navigation__item--popover">
               <a href="#"> Каталог товаров </a>
               <div class="navigation__popover-container">
                 <ul class="navigation__popover-list">
@@ -139,7 +140,131 @@
         </nav>
       </div>
     </header>
-    <main class="main"></main>
+    <main class="main">
+      <h1 class="visually-hidden">
+        Магазин электронных товаров "Device"
+      </h1>
+      <section class="slider">
+        <h2 class="visually-hidden">
+          популярные товары
+        </h2>
+        <div class="container slider__container">
+          <ol class="slider__wrapper">
+            <li class="slider__item  slider__item--active">
+              <div class="popular">
+                <div class="popular__image">
+                  <img src="images/slider-1.png" alt="Квадрокоптер">
+                </div>
+                <div class="popular__content">
+                  <h3 class="popular__title">
+                    Порхает как бабочка,жалит как пчела!
+                  </h3>
+                  <p class="popular__description">
+                    Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+                  </p>
+                  <a href="#" class="popular__link">
+                    Подробнее
+                  </a>
+                  <table class="popular__table">
+                    <tr>
+                      <td> 800 м</td>
+                      <td> 50 м</td>
+                    </tr>
+                    <tr>
+                      <th> Дальность полета</th>
+                      <th> Радиус поражения</th>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </li>
+            <!-- 2 -->
+            <li class="slider__item">
+              <div class="popular">
+                <div class="popular__image">
+                  <img src="images/slider-2.png" alt="Квадрокоптер">
+                </div>
+                <div class="popular__content">
+                  <h3 class="popular__title">
+                    Худеем правильно!
+                  </h3>
+                  <p class="popular__description">
+                    Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+                  </p>
+                  <a href="#" class="popular__link">
+                    Подробнее
+                  </a>
+                  <table class="popular__table">
+                    <tr>
+                      <td> 48 часов</td>
+                    </tr>
+                    <tr>
+                      <th> Без подзарядки</th>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </li>
+            <!-- 3 -->
+            <li class="slider__item">
+              <div class="popular">
+                <div class="popular__image">
+                  <img src="images/slider-3.png" alt="Квадрокоптер">
+                </div>
+                <div class="popular__content">
+                  <h3 class="popular__title">
+                    Делай селфи, как Бен Стиллер!
+                  </h3>
+                  <p class="popular__description">
+                    Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+                  </p>
+                  <a href="#" class="popular__link">
+                    Подробнее
+                  </a>
+                  <table class="popular__table">
+                    <tr>
+                      <td> 8,5 м </td>
+                      <td> 5 кг</td>
+                      <td> Карбон</td>
+                    </tr>
+                    <tr>
+                      <th> Длина палки </th>
+                      <th> Вес палки</th>
+                      <th> Материал</th>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </li>
+          </ol>
+          <div class="slider__arrows">
+            <button class="slider__arrow slider__arrow--prev" type="button">
+              <span class="visually-hidden"> Предыдущий слайд. </span>
+            </button>
+            <button class="slider__arrow slider__arrow--next" type="button">
+              <span class="visually-hidden"> Следующий слайд. </span>
+            </button>
+          </div>
+          <div class="slider__pagination">
+            <button class="slider__bullet slider__bullet--active" type="button">
+              <span class="visually-hidden">
+                Первый слайд.
+              </span>
+            </button>
+            <button class="slider__bullet" type="button">
+              <span class="visually-hidden">
+                Второй слайд.
+              </span>
+            </button>
+            <button class="slider__bullet" type="button">
+              <span class="visually-hidden">
+                Третий слайд.
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="footer"></footer>
   </body>
 </html>
