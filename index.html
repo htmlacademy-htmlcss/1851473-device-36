@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Device</title>
   </head>
+
   <body>
     <header class="header">
       <div class="container">
@@ -15,36 +17,25 @@
             <img src="images/logo.svg" alt="Логотип" />
           </a>
           <div class="navigation__container">
-            <form
-              action="https://echo.htmlacademy.ru"
-              method="GET"
-              class="form"
-            >
+            <form action="https://echo.htmlacademy.ru" method="GET" class="form">
               <div class="form__input-wrapper">
-                <input
-                  type="search"
-                  name="search"
-                  id="search"
-                  placeholder="Поиск по сайту"
-                  class="form__search"
-                  required
-                />
+                <input type="search" name="search" id="search" placeholder="Поиск по сайту" class="form__search"
+                  required />
               </div>
               <label for="search" class="visually-hidden">
-                Поиск по сайту.</label
-              >
+                Поиск по сайту.</label>
               <button class="form__btn-search" type="submit">Найти</button>
             </form>
             <ul class="navigation__user-list navigation__user-list--log-in">
-              <li class="navigation__user-item">
+              <li class="navigation__user-item navigation__user-item--log-in">
                 <a href="#"> Войти </a>
               </li>
             </ul>
             <ul class="navigation__user-list">
-              <li class="navigation__user-item">
+              <li class="navigation__user-item navigation__user-item--graph">
                 <a href="#">Сравнить </a>
               </li>
-              <li class="navigation__user-item">
+              <li class="navigation__user-item navigation__user-item--cart">
                 <a href="#">
                   Корзина
                   <span class="navigation__number"> 2 </span>
@@ -53,12 +44,7 @@
                   <ul class="popover-cart__list">
                     <li class="popover-cart__item">
                       <a href="#">
-                        <img
-                          src="images/product-2.jpg"
-                          alt="Продукт."
-                          width="39"
-                          height="43"
-                        />
+                        <img src="images/product-2.jpg" alt="Продукт." width="39" height="43" />
                         <h2 class="popover-cart__title">
                           Любительская селфи-палка
                         </h2>
@@ -69,12 +55,7 @@
                     </li>
                     <li class="popover-cart__item">
                       <a href="#">
-                        <img
-                          src="images/product-1.jpg"
-                          alt="Продукт."
-                          width="39"
-                          height="43"
-                        />
+                        <img src="images/product-1.jpg" alt="Продукт." width="39" height="43" />
                         <h2 class="popover-cart__title">
                           Профессиональная селфи-палка
                         </h2>
@@ -162,7 +143,8 @@
                     Порхает как бабочка, жалит как пчела!
                   </h3>
                   <p class="popular__description">
-                    Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+                    Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную
+                    камеру.
                   </p>
                   <a href="#" class="popular__link btn-yellow">
                     Подробнее
@@ -218,7 +200,8 @@
                     Делай селфи, как Бен Стиллер!
                   </h3>
                   <p class="popular__description">
-                    Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+                    Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и
+                    весом всего 5 кг.
                   </p>
                   <a href="#" class="popular__link">
                     Подробнее
@@ -266,7 +249,44 @@
           </div>
         </div>
       </section>
+      <section class="category">
+        <div class="category__container container">
+          <ul class="category__list">
+            <li class="category__item category__item--vr-glass">
+              <a href="#">
+                Виртуальная реальность
+              </a>
+            </li>
+            <li class="category__item category__item--monopod">
+              <a href="#">
+                Моноподы для селфи
+              </a>
+            </li>
+            <li class="category__item category__item--camera">
+              <a href="#">
+                Экшн-камеры
+              </a>
+            </li>
+            <li class="category__item category__item--bracer">
+              <a href="#">
+                Фитнес-браслеты
+              </a>
+            </li>
+            <li class="category__item category__item--watch">
+              <a href="#">
+                Умные часы
+              </a>
+            </li>
+            <li class="category__item category__item--quadrocopter">
+              <a href="#">
+                Квадрокоптеры
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer class="footer"></footer>
   </body>
+
 </html>
