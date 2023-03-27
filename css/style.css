@@ -567,3 +567,58 @@ body {
 .category__item a:focus {
   outline: 2px solid var(--color-purple);
 }
+
+/* сервис */
+
+.services {
+  padding-bottom: 72px;
+}
+
+.services__container {
+  display: flex;
+}
+
+.services__tab-btn {
+  width: 280px;
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+  border-right: 7px solid #000000;
+}
+
+.services__btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+  border: none;
+  background-color: transparent;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 160px;
+  position: relative;
+}
+
+.services__btn::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  background: var(--color-yellow);
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.services__btn-wrapper {
+  margin-bottom: 36px;
+}
+
+.services__description {
+  max-width: 475px;
+}
