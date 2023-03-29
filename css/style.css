@@ -23,8 +23,9 @@
 }
 
 :root {
-  --color-yellow:#FFE17F;
+  --color-yellow: #FFE17F;
   --color-purple: #AF4FFF;
+  --color-dark-yellow: #FFC700;
 }
 
 *,
@@ -68,6 +69,7 @@ body {
   padding-top: 20px;
   padding-right: 60px;
   position: relative;
+  z-index: 5;
 }
 
 .navigation__container {
@@ -280,6 +282,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  flex-wrap: wrap;
 }
 
 .navigation__item {
@@ -326,6 +329,7 @@ body {
   border: 2px solid #000000;
   border-radius: 0 50px 50px 0;
   border-left: none;
+  margin: 0;
 }
 
 .form {
@@ -510,6 +514,7 @@ body {
   list-style: none;
   padding-left: 0;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .category__item a {
@@ -750,4 +755,84 @@ body {
   background-image: url("../images/manager.svg");
   width: 156px;
   height: 188px;
+}
+
+/* кнопка редких заказов */
+
+.rare-btn {
+  display: block;
+  width: 100%;
+  padding: 40px 125px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+  border: none;
+  background: #F0F0F0;
+  margin-top: 70px;
+  position: relative;
+}
+
+.rare-btn::after {
+  content: "";
+  position: absolute;
+  width: 125px;
+  height: 100%;
+  background-image: url("../images/truck.svg");
+  background-color: var(--color-yellow);
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.rare-btn__info {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(220, 220, 220, 0.5);
+  position: absolute;
+  top: 50%;
+  right: 42px;
+  transform: translateY(-50%);
+}
+
+.rare-btn__info::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  background-image: url("../images/info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+}
+
+.rare-btn:hover::after {
+  background-color: var(--color-dark-yellow);
+}
+
+.rare-btn:hover .rare-btn__info::after {
+  opacity: 1;
+}
+
+.rare-btn:active {
+  opacity: 0.3;
+}
+
+/* делаю секцию информации */
+.info__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info__content {
+  width: 532px;
 }
