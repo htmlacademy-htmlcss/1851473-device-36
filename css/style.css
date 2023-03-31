@@ -48,6 +48,9 @@
 }
 
 body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -55,6 +58,10 @@ body {
   color: #444444;
   margin: 0;
   min-width: 1240px;
+}
+
+main {
+  flex-grow: 1;
 }
 
 .container {
@@ -70,6 +77,10 @@ body {
   padding-right: 60px;
   position: relative;
   z-index: 5;
+}
+
+.navigation--inner {
+  padding-bottom: 20px;
 }
 
 .navigation__container {
@@ -202,6 +213,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  flex-wrap: wrap;
 }
 
 .navigation__user-item {
@@ -1122,5 +1134,145 @@ body {
   height: 7px;
   background-color: var(--color-dark-yellow);
   margin-top: 64px;
-  
+}
+
+.navigation__user-item--log-out {
+  opacity: 0.3;
+  margin-left: 28px;
+}
+
+.navigation__user-item--log-out a {
+  padding-left: 0;
+}
+
+/* хлебные крошки */
+
+.header-inner__container {
+  padding: 35px 100px 30px 100px;
+}
+
+.header-inner__container h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+
+.breadcrumbs {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.breadcrumbs__item a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.breadcrumbs__item:not(:last-child) {
+  padding-right: 36px;
+  position: relative;
+}
+
+.breadcrumbs__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/breadcumbs-arrow.svg");
+  background-repeat: no-repeat;
+  top: 12px;
+  right: 15px;
+  width: 4px;
+  height: 7px;
+}
+
+/* формa каталога */
+
+.catalog__form {
+  width: 320px;
+  padding-left: 60px;
+  padding-top: 25px;
+  padding-right: 60px;
+  padding-bottom: 25px;
+}
+
+.form-filter__range-scale {
+  position: relative;
+  height: 2px;
+  margin-bottom: 16px;
+  background-color: #dcdcdc;
+  border-radius: 2px;
+}
+
+.form-filter__range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: #000000;
+}
+
+.form-filter__range-toggle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #ebebeb;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.form-filter__range-toggle--min {
+  top: -9px;
+  left: -9px;
+}
+
+.form-filter__range-toggle--max {
+  top: -9px;
+  left: 110px;
+}
+
+.form-filter__catalog-filter-label {
+  display: flex;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  opacity: 0.3;
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+
+.form-filter__catalog-filter-label--max {
+  left: 100px;
+}
+
+.form-filter__catalog-filter-label--min {
+  left: -10px;
+}
+
+.form-filter__range-input {
+  width: 30px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  border: none;
+  background: transparent;
+}
+
+.form-filter__range-input::-webkit-outer-spin-button,
+.form-filter__range-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form-filter__range-wrapper-inputs {
+  position: relative;
+  height: 23px;
+  width: 100%;
+
 }
