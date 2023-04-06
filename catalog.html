@@ -45,7 +45,7 @@
                 <div class="popover popover-cart">
                   <ul class="popover-cart__list">
                     <li class="popover-cart__item">
-                      <a href="#">
+                      <a href="#" class="popover-cart__link">
                         <img src="images/product-2.jpg" alt="Продукт." width="39" height="43" />
                         <h2 class="popover-cart__title">
                           Любительская селфи-палка
@@ -56,7 +56,7 @@
                       </button>
                     </li>
                     <li class="popover-cart__item">
-                      <a href="#">
+                      <a href="#" class="popover-cart__link">
                         <img src="images/product-1.jpg" alt="Продукт." width="39" height="43" />
                         <h2 class="popover-cart__title">
                           Профессиональная селфи-палка
@@ -77,7 +77,9 @@
                       <span> 2000 ₽ </span>
                     </div>
                   </div>
-                  <a href="#" class="popover-cart__btn"> Открыть корзину </a>
+                  <div class="popover-cart__wrapper">
+                    <a href="#" class="popover-cart__btn"> Открыть корзину </a>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -90,7 +92,7 @@
                   <li class="navigation__popover-item">
                     <a href="#"> Виртуальная реальность </a>
                   </li>
-                  <li class="navigation__popover-item">
+                  <li class="navigation__popover-item navigation__popover-item--active">
                     <a href="#"> Моноподы для cелфи </a>
                   </li>
                   <li class="navigation__popover-item">
@@ -251,11 +253,13 @@
               <ul class="catalog__list">
                 <li class="catalog__item">
                   <a href="#" class="product">
-                    <img src="images/product-2.jpg" alt="Продукт." class="product__img">
+                    <div class="product__image-wrapper">
+                      <img src="images/product-2.jpg" alt="Продукт." class="product__img">
+                    </div>
                     <span class="product__link btn-yellow"> <span> Подробнее </span> </span>
                     <div class="product__description">
                       <h2 class="product__title">
-                        Любительская селфи-палка
+                        Любительская<br> селфи-палка
                       </h2>
                       <p class="product__price">
                         500 ₽
@@ -265,11 +269,13 @@
                 </li>
                 <li class="catalog__item">
                   <a href="#" class="product">
-                    <img src="images/product-1.jpg" alt="Продукт." class="product__img">
+                    <div class="product__image-wrapper">
+                      <img src="images/product-1.jpg" alt="Продукт." class="product__img">
+                    </div>
                     <span class="product__link btn-yellow"> <span> Подробнее </span> </span>
                     <div class="product__description">
                       <h2 class="product__title">
-                        Профессиональная селфи-палка
+                        Профессиональная<br> селфи-палка
                       </h2>
                       <p class="product__price">
                         1 500 ₽
@@ -278,12 +284,14 @@
                   </a>
                 </li>
                 <li class="catalog__item">
-                  <a href="#" class="product">
-                    <img src="images/product-3.jpg" alt="Продукт." class="product__img">
+                  <a href="#" class="product product--new">
+                    <div class="product__image-wrapper">
+                      <img src="images/product-3.jpg" alt="Продукт." class="product__img">
+                    </div>
                     <span class="product__link btn-yellow"> <span> Подробнее </span> </span>
                     <div class="product__description">
                       <h2 class="product__title">
-                        Непотопляемая селфи-палка
+                        Непотопляемая<br> селфи-палка
                       </h2>
                       <p class="product__price">
                         2 500 ₽
@@ -293,11 +301,13 @@
                 </li>
                 <li class="catalog__item">
                   <a href="#" class="product">
-                    <img src="images/product-4.jpg" alt="Продукт." class="product__img">
+                    <div class="product__image-wrapper">
+                      <img src="images/product-4.jpg" alt="Продукт." class="product__img">
+                    </div>
                     <span class="product__link btn-yellow"> <span> Подробнее </span> </span>
                     <div class="product__description">
                       <h2 class="product__title">
-                        Селфи-палка «Следуй за мной»
+                        Селфи-палка «Следуй<br> за мной»
                       </h2>
                       <p class="product__price">
                         1 500 ₽
@@ -306,6 +316,44 @@
                   </a>
                 </li>
               </ul>
+              <button class="catalog__btn" type="button">
+                Загрузить ещЁ
+              </button>
+              <div class="catalog__pagination pagination">
+                <a class="pagination__btn pagination__btn--back pagination__btn--disabled">
+                  Назад
+                </a>
+                <ul class="pagination__list">
+                  <li>
+                    <a class="pagination__link pagination__link--active" >
+                      1
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="pagination__link">
+                      2
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="pagination__link">
+                      3
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="pagination__link">
+                      ...
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="pagination__link">
+                      15
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="pagination__btn pagination__btn--next">
+                  Вперёд
+                </a>
+              </div>
             </div>
           </div>
         </div>
