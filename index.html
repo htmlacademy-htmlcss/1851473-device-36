@@ -489,6 +489,59 @@
         </div>
       </div>
     </footer>
+    <div class="modal">
+      <div class="modal__wrapper">
+        <button class="modal__btn-close" aria-label="Закрыть." type="button">
+        </button>
+        <div class="modal__content">
+          <section class="form-delivery">
+            <h2 class="form-delivery__title">
+              Доставка под заказ
+            </h2>
+            <form action="https://echo.htmlacademy.ru" class="form-delivery__form" method="POST">
+              <div class="form-delivery__wrapper">
+                <label for="name" class="form-delivery__label">
+                  Ваше имя:
+                </label>
+                <input type="text" id="name" name="name" class="form-delivery__input" placeholder="Введите имя">
+              </div>
+              <div class="form-delivery__wrapper">
+                <label for="delivery-email" class="form-delivery__label">
+                  Ваш e-mail:
+                </label>
+                <input type="email" id="delivery-email" name="email" class="form-delivery__input" placeholder="Введите e-mail">
+                <span class="form-delivery__alert">Забавный у вас адрес </span>
+              </div>
+              <div class="form-delivery__wrapper">
+                <label for="text" class="form-delivery__label">
+                  Что нужно привезти:
+                </label>
+                <input type="text" id="message" name="message" class="form-delivery__input" placeholder="Введите имя">
+              </div>
+              <div class="form-delivery__wrapper">
+                <label for="number">
+                  Количество:
+                </label>
+                <div class="form-delivery__number-wraper">
+                  <button class="form-delivery__number-btn" type="button" aria-label="Плюс.">
+
+                  </button>
+                  <input type="number" id="number" name="quantity" value="1">
+                  <button class="form-delivery__number-btn" type="button" aria-label="Минус.">
+
+                  </button>
+                </div>
+              </div>
+              <div class="form-delivery__submit-wrapper">
+                <button class="form-delivery__submit btn-yellow" type="submit">
+
+                </button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
   </body>
 
 </html>
