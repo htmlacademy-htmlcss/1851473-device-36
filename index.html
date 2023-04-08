@@ -503,38 +503,51 @@
                 <label for="name" class="form-delivery__label">
                   Ваше имя:
                 </label>
-                <input type="text" id="name" name="name" class="form-delivery__input" placeholder="Введите имя">
+                <input type="text" id="name" name="name" class="form-delivery__input form-delivery__input--name" placeholder="Введите имя">
+                <span class="form-delivery__alert">Добавьте имя </span>
               </div>
               <div class="form-delivery__wrapper">
                 <label for="delivery-email" class="form-delivery__label">
                   Ваш e-mail:
                 </label>
-                <input type="email" id="delivery-email" name="email" class="form-delivery__input" placeholder="Введите e-mail">
+                <input type="email" id="delivery-email" name="email" class="form-delivery__input form-delivery__input--email form-delivery__input--invalid" placeholder="Введите e-mail">
                 <span class="form-delivery__alert">Забавный у вас адрес </span>
               </div>
               <div class="form-delivery__wrapper">
                 <label for="text" class="form-delivery__label">
                   Что нужно привезти:
                 </label>
-                <input type="text" id="message" name="message" class="form-delivery__input" placeholder="Введите имя">
+                <input type="text" id="message" name="message" class="form-delivery__input form-delivery__input--message" placeholder="В свободной форме">
               </div>
               <div class="form-delivery__wrapper">
-                <label for="number">
-                  Количество:
-                </label>
-                <div class="form-delivery__number-wraper">
-                  <button class="form-delivery__number-btn" type="button" aria-label="Плюс.">
+                <div class="form-delivery__tooltip">
+                  <label for="number" class="form-delivery__label">
+                    Количество:
+                  </label>
+                  <div class="form-delivery__tooltip-wrapper">
+                    <button type="button" class="form-delivery__tooltip-btn">
+
+                    </button>
+                    <div class="form-delivery__tooltip-content">
+                      <p>
+                        Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-delivery__number-wrapper">
+                  <button class="form-delivery__number-btn form-delivery__number-btn--minus" type="button" aria-label="Минус.">
 
                   </button>
-                  <input type="number" id="number" name="quantity" value="1">
-                  <button class="form-delivery__number-btn" type="button" aria-label="Минус.">
+                  <input type="number" id="number" name="quantity" value="1" class="form-delivery__input form-delivery__input--quantity">
+                  <button class="form-delivery__number-btn form-delivery__number-btn--plus" type="button" aria-label="Плюс.">
 
                   </button>
                 </div>
               </div>
               <div class="form-delivery__submit-wrapper">
                 <button class="form-delivery__submit btn-yellow" type="submit">
-
+                  <span> Отправить</span>
                 </button>
               </div>
             </form>
