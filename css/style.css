@@ -2292,6 +2292,7 @@ main {
   background-repeat: no-repeat;
   top: 72px;
   right: 68px;
+  cursor: pointer;
 }
 
 .modal__btn-close:hover {
