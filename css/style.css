@@ -627,13 +627,10 @@ main {
 /* Слайдер */
 
 .slider__wrapper {
-  counter-reset: number;
   list-style: none;
 }
 
-.slider__item::before {
-  content: counter(number, decimal-leading-zero);
-  counter-increment: number;
+.slider__item .slider__item-number {
   position: absolute;
   font-weight: 700;
   font-size: 180px;
