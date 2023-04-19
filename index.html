@@ -114,10 +114,10 @@
               </div>
             </li>
             <li class="navigation__item">
-              <a href="#"> Доставка </a>
+              <a href="#courier" class="link-services"> Доставка </a>
             </li>
             <li class="navigation__item">
-              <a href="#"> Гарантия </a>
+              <a href="#guarantee-item" id="guarantee-link" class="link-services"> Гарантия </a>
             </li>
             <li class="navigation__item">
               <a href="#"> Контакты </a>
@@ -300,12 +300,12 @@
         <div class="services__container container">
           <ul class="services__tab-btn">
             <li class="services__btn-wrapper">
-              <button class="services__btn services__btn--active" type="button">
+              <button class="services__btn services__btn--active" type="button" data-services="courier">
                 <span>Доставка</span>
               </button>
             </li>
             <li class="services__btn-wrapper">
-              <button class="services__btn" type="button">
+              <button class="services__btn" type="button" data-services="guarantee-item">
                 <span>Гарантия</span>
               </button>
             </li>
@@ -316,7 +316,7 @@
             </li>
           </ul>
           <ul class="services__tab-content">
-            <li class="services__item services__item--courier services__item--active">
+            <li class="services__item services__item--courier services__item--active" id="courier">
               <h3 class="services__title">
                 Доставка
               </h3>
@@ -324,7 +324,7 @@
                 Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду совершенно бесплатно! Ведь мы&nbsp;неплохо заработаем, поднимая его на ваш этаж.
               </p>
             </li>
-            <li class="services__item services__item--mobile">
+            <li class="services__item services__item--mobile" id="guarantee-item">
               <h3 class="services__title">
                 Гарантия
               </h3>
@@ -440,12 +440,12 @@
         <div class="footer__navigation">
           <ul class="footer__nav-list">
             <li class="footer__nav-item">
-              <a href="#">
+              <a href="#courier" class="link-services">
                 Доставка
               </a>
             </li>
             <li class="footer__nav-item">
-              <a href="#">
+              <a href="#guarantee-item" class="link-services">
                 Гарантия
               </a>
             </li>

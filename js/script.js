@@ -62,8 +62,48 @@ for(let i = 0; i < activeBtns.length; i++) {
   })
 }
 
+// навигация
 
-// табы в слайдере
+// let guaranteeLink = document.getElementById('guarantee-link');
+// let guaranteeItem = document.getElementById('guarantee-item');
+
+// guaranteeLink.addEventListener('click', function() {
+  // let guaranteeIndex;
+  // for (let i = 0; i < serviceItems.length - 1; i++) {
+  //   if (serviceItems[i])
+  // }
+//   for(let j = 0; j < activeBtns.length; j++) {
+//     activeBtns[j].classList.remove('services__btn--active');
+//     serviceItems[j].classList.remove('services__item--active');
+//   }
+//   activeBtns[1].classList.add('services__btn--active');
+//   serviceItems[1].classList.add('services__item--active');
+// })
+let linksServices = document.querySelectorAll('.link-services');
+
+for (let linkServices of linksServices) {
+  linkServices.addEventListener('click', function(event){
+    event.preventDefault();
+
+    let blockID = linkServices.getAttribute('href').substring(1);
+    let element = document.getElementById(blockID);
+    let button = document.querySelector('[data-services=' + blockID + ']');
+
+    for(let j = 0; j < activeBtns.length; j++) {
+      activeBtns[j].classList.remove('services__btn--active');
+      serviceItems[j].classList.remove('services__item--active');
+    }
+    element.classList.add('services__item--active');
+    button.classList.add('services__btn--active');
+    console.log(element)
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
+
+// переключение в слайдере
 
 let sliderBtns = document.querySelectorAll('.slider__bullet');
 let sliderItems = document.querySelectorAll('.slider__item');
